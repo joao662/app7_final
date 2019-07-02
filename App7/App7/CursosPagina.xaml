@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App7.CursosPagina">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Lista com os cursos."/>
+            <Picker x:Name="Cursoslista"
+        Title="Selecione o curso">
+            </Picker>
+            <Label Text="Lista com todas as disciplinas do curso selecionado."/>
+            <Picker x:Name="Disciplinas" HorizontalOptions="FillAndExpand"
+                    Title="Disciplinas"
+                    >
+            </Picker>
+            <Button Text="Novo Curso" 
+                VerticalOptions="CenterAndExpand"
+                Clicked="NvCursoPG" 
+                HorizontalOptions="Center"/>
+            <Button Text="Editar Curso" 
+                VerticalOptions="CenterAndExpand"
+                Clicked="Edtcurso" 
+                HorizontalOptions="Center"/>
+            <Button Text="Voltar" 
+                VerticalOptions="CenterAndExpand"
+                Clicked="VoltarPage" 
+                HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

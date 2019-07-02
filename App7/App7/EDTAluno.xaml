@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App7.EDTAluno">
+    <ContentPage.Content>
+        <StackLayout>
+            <Picker x:Name="Picker1" Title="Alunos"></Picker>
+
+            <Entry x:Name="Entry1" Placeholder="Nome do Aluno"/>
+
+            <Entry x:Name="Entry2" Placeholder="CPF do Aluno"/>
+
+            <Button x:Name="butSalvar" Text="Salvar Alterações"
+                    HorizontalOptions="Center"
+                    Clicked="OnButtonClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

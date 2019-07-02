@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App7.Novaturmapg">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Lista com as Disciplinas"/>
+            <Picker x:Name="Disciplinas" HorizontalOptions="FillAndExpand" Title="Disciplinas">
+                <Picker.Items>
+                    <x:String></x:String>
+                    <x:String></x:String>
+                </Picker.Items>
+            </Picker>
+            <Label Text="Lista com todos os professores."/>
+            <Picker x:Name="professores" HorizontalOptions="FillAndExpand" Title="professores">
+                <Picker.Items>
+                    <x:String></x:String>
+                    <x:String></x:String>
+                </Picker.Items>
+            </Picker>
+            <Entry x:Name="Ano" Placeholder="Ano"/>
+            <Entry x:Name="Semestre" Placeholder="Semestre"/>
+            <Button Text="Salvar" 
+                Clicked="SalvarTurma" 
+                HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

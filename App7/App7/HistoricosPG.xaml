@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App7.HistoricosPG">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Lista com as Matriculas"/>
+            <Picker x:Name="Matriculas" HorizontalOptions="FillAndExpand" Title="Matriculas">
+                <Picker.Items>
+                    <x:String></x:String>
+                    <x:String></x:String>
+                </Picker.Items>
+            </Picker>              
+            <Label Text="Lista com o historico da matricula selecionada "/>
+            <Picker x:Name="Historicos" HorizontalOptions="FillAndExpand" Title="histórico">
+                <Picker.Items>
+                    <x:String></x:String>
+                    <x:String></x:String>
+                </Picker.Items>
+            </Picker>
+            <Label Text="Lista com as notas do historico."/>
+            <Picker x:Name="Notas" HorizontalOptions="FillAndExpand" Title="Notas">
+                <Picker.Items>
+                    <x:String></x:String>
+                    <x:String></x:String>
+                </Picker.Items>
+            </Picker>
+            <Button Text="Lançar notas" 
+                Clicked="Lançarotas" 
+                HorizontalOptions="Center"/>
+            <Button Text="Remover Notas" 
+                Clicked="RemoverNotas" 
+                HorizontalOptions="Center"/>
+            <Button Text="Lançar faltas" 
+                Clicked="Lançarfaltas" 
+                HorizontalOptions="Center"/>
+            <Label x:Name="Label1" IsVisible="True"
+            TextColor="Blue" />
+
+            <Label x:Name="Label2" IsVisible="True"
+             TextColor="Blue" />
+
+            <Label x:Name="Labe3" IsVisible="True"
+            TextColor="Blue" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App7.NovoAluno">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="NomeAluno" Placeholder="Nome do Aluno"/>
+
+            <Entry x:Name="CpfAluno" Placeholder="CPF do Aluno"/>
+            <Button Text="Salvar" 
+                VerticalOptions="CenterAndExpand"
+                Clicked="Salvarinfo" 
+                HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

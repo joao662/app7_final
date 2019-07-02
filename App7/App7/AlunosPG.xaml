@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App7.AlunosPG">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Lista com os alunos."/>
+            <Picker x:Name="Alunos" HorizontalOptions="FillAndExpand" Title="Alunos">
+                <Picker.Items>
+                    <x:String></x:String>
+                    <x:String></x:String>
+                </Picker.Items>
+            </Picker>
+            <Button Text="Novo Aluno" 
+                VerticalOptions="CenterAndExpand"
+                Clicked="NovoAluno" 
+                HorizontalOptions="Center"/>
+            <Button Text="Editar Aluno" 
+                VerticalOptions="CenterAndExpand"
+                Clicked="EDTAluno" 
+                HorizontalOptions="Center"/>
+            <Label Text="Lista com as matriculas do aluno selecionado."/>
+            <Picker x:Name="MatrAluno" HorizontalOptions="FillAndExpand" Title="Mátriculas">
+                <Picker.Items>
+                    <x:String></x:String>
+                    <x:String></x:String>
+                </Picker.Items>
+            </Picker>
+            <Button Text="Matricular no curso" 
+                VerticalOptions="CenterAndExpand"
+                Clicked="MTRCURSO" 
+                HorizontalOptions="Center"/>
+            <Label Text="Lista com os contatos do aluno selecionado."/>
+            <Picker x:Name="Contatos" HorizontalOptions="FillAndExpand" Title="Contatos">
+                <Picker.Items>
+                    <x:String></x:String>
+                    <x:String></x:String>
+                </Picker.Items>
+            </Picker>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App7.MatriculasPG">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Lista com as Matriculas"/>
+            <Picker x:Name="Matriculas" HorizontalOptions="FillAndExpand" Title="Matriculas">
+                <Picker.Items>
+                    <x:String></x:String>
+                    <x:String></x:String>
+                </Picker.Items>
+            </Picker>
+            <Label Text="Lista com todos as Turmas."/>
+            <Picker x:Name="Turmas" HorizontalOptions="FillAndExpand" Title="Turmas">
+                <Picker.Items>
+                    <x:String></x:String>
+                    <x:String></x:String>
+                </Picker.Items>
+            </Picker>
+            <Button Text="Associar" 
+                Clicked="AssociarMatr" 
+                HorizontalOptions="Center"/>
+            <Button Text="Remover" 
+                Clicked="RemoverMtr" 
+                HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

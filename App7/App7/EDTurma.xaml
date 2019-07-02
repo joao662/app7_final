@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App7.EDTurma">
+    <ContentPage.Content>
+        <StackLayout>
+            <Picker x:Name="Picker0" Title="Turma"></Picker>
+
+            <Picker x:Name="Picker" Title="Disciplina"></Picker>
+
+            <Picker x:Name="Picker2" Title="Professor"></Picker>
+
+            <Entry x:Name="Entry" Placeholder="Ano"></Entry>
+
+            <Entry x:Name="Entry2" Placeholder="Semestre"></Entry>
+
+
+
+            <Button x:Name="salvar" Text="Salvar"
+            HorizontalOptions="Center"
+            Clicked="ButtonSalvar"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

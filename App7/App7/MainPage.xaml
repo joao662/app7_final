@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App7"
+             x:Class="App7.MainPage">
+
+    <StackLayout Orientation="Vertical">
+        <Button Text="Cursos" 
+                VerticalOptions="CenterAndExpand"
+                Clicked="CursosPagina" 
+                HorizontalOptions="Center"/>
+        <Button Text="Disciplinas" 
+                Clicked="DisciplinasPagina" 
+                HorizontalOptions="Center"/>
+        <Button Text="Alunos" 
+                Clicked="AlunosPagina" 
+                HorizontalOptions="Center"/>
+        <Button Text="Professores" 
+                Clicked="ProfessoresPagina" 
+                HorizontalOptions="Center"/>
+        <Button Text="Turmas" 
+                Clicked="TurmasPagina" 
+                HorizontalOptions="Center"/>
+        <Button Text="Matrículas" 
+                Clicked="MatriculasPagina" 
+                HorizontalOptions="Center"/>
+        <Button Text="Históricos" 
+                Clicked="HistoricosPagina" 
+                HorizontalOptions="Center"/>
+        <Button Text="Contatos" 
+                Clicked="ContatosPagina" 
+                HorizontalOptions="Center"/>
+
+    </StackLayout>
+
+</ContentPage>

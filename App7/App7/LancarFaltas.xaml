@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App7.LancarFaltas">
+    <ContentPage.Content>
+        <StackLayout>
+            <Picker x:Name="Picker" Title="Matricula">
+                <Picker.Items></Picker.Items>
+            </Picker>
+            <Picker x:Name="Picker1" Title="Historico">
+                <Picker.Items></Picker.Items>
+            </Picker>
+
+            <Entry x:Name="Entry" Placeholder="Faltas" />
+
+            <Button x:Name="Botao" Text="Lançar Faltas"
+            VerticalOptions="EndAndExpand"
+            HorizontalOptions="Center" 
+            Clicked="OnButtonClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

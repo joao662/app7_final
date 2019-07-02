@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App7.ContatosPG">
+    <ContentPage.Content>
+        <StackLayout>
+            <Picker x:Name="Picker" Title="Pessoas" SelectedIndexChanged="PickerSelecionado">
+                <Picker.Items></Picker.Items>
+            </Picker>
+            <Picker x:Name="Picker1" Title="Contatos">
+                <Picker.Items></Picker.Items>
+            </Picker>
+
+            <Button x:Name="Botao" Text="Associar Familia"
+            VerticalOptions="EndAndExpand"
+            HorizontalOptions="Center" 
+            Clicked="OnButtonClicked" />
+
+            <Button x:Name="Botao1" Text="Associar Endereço"
+            VerticalOptions="EndAndExpand"
+            HorizontalOptions="Center" 
+            Clicked="OnButtonClicked1" />
+
+            <Button x:Name="Botao2" Text="Associar Internet"
+            VerticalOptions="EndAndExpand"
+            HorizontalOptions="Center" 
+            Clicked="OnButtonClicked2" />
+
+            <Button x:Name="Botao3" Text="Associar Telefone"
+            VerticalOptions="EndAndExpand"
+            HorizontalOptions="Center" 
+            Clicked="OnButtonClicked3" />
+
+            <Button x:Name="Botao5" Text="Excluir contato"
+            VerticalOptions="EndAndExpand"
+            HorizontalOptions="Center" 
+            Clicked="OnButtonClicked5" />
+
+            <Button x:Name="Botao6" Text="Excluir pessoa"
+            VerticalOptions="EndAndExpand"
+            HorizontalOptions="Center" 
+            Clicked="OnButtonClicked6" />
+
+
+
+
+            <Button x:Name="Botao4" Text="Voltar"
+            VerticalOptions="EndAndExpand"
+            HorizontalOptions="Center" 
+            Clicked="OnButtonClicked4" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

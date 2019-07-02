@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App7.ASCcurso">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Lista com as Disciplinas."/>
+            <Picker x:Name="Disciplinas" HorizontalOptions="FillAndExpand" Title="Disciplinas">
+                <Picker.Items>
+                    <x:String></x:String>
+                    <x:String></x:String>
+                </Picker.Items>
+            </Picker>
+            <Label Text="Lista com os cursos."/>
+            <Picker x:Name="Cursos" HorizontalOptions="FillAndExpand" Title="Cursos">
+                <Picker.Items>
+                    <x:String></x:String>
+                    <x:String></x:String>
+                </Picker.Items>
+            </Picker>
+            <Button Text="Associar"
+                Clicked="AssociarCurso" 
+                HorizontalOptions="Center"/>
+            <Button Text="Remover" 
+                Clicked="RemoverCurso" 
+                HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
